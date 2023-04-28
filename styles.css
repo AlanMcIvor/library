@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: Roboto, "sans-serif";
+    margin: 25px;
+}
+
+#new-book-btn, #submit-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #06b6d4;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #6b7280;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.display{
+    display: none;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 8px;
+    border: 1px solid #6b7280;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    outline: none;
+    transition: 300ms;
+    margin-bottom: 10px;
+}
+
+#submit-btn{
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+#library{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 45px;
+}
+
+.card{
+    min-width: 150px;
+    border: 1px solid #6b7280;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.7;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card .title{
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card .author{
+    font-size: .7rem;
+}
