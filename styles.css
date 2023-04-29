@@ -23,6 +23,18 @@ body{
     cursor: pointer;
 }
 
+.remove-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #d42506;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 form{
     width: 500px;
     margin: 50px auto;
@@ -68,7 +80,7 @@ select {
 }
 
 .card{
-    min-width: 150px;
+    width: 250px;
     border: 1px solid #6b7280;
     padding: 15px;
     border-radius: 10px;

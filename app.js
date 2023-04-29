@@ -22,6 +22,7 @@ function render(){
      <h5 class="author">${book.author}</h5>
      <p>${book.pages}</p>
      <p class="read-status">${book.read ? "Read" : "Not Read Yet"}</p>
+        <button class="remove-btn" onclick="removeBook(${this.book})">Delete</button>
      </div>`
      libraryBook.appendChild(bookEl)
     }))
@@ -55,3 +56,10 @@ document.querySelector("#new-book-form").addEventListener("submit", function(e){
     addBookToLibrary()
 
 })
+
+
+// remove book
+function removeBook(book){
+    myLibrary.splice(book, 1);
+    render();
+}
